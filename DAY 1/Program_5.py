@@ -1,0 +1,17 @@
+# To generate a bill.
+item = input("Enter the Name of the item : ")
+quantity = input("Enter the Quantity of the item : ")
+status = input("Enter the status of the item : ")
+value = float(input("Enter the Value of the item : "))
+discount = float(input("Enter the Discount on the item : "))
+tax = float(input("Enter the Tax on the item : "))
+total_amount = (value - ((discount/100)*value)) + ((tax/100)*value)
+
+print("\t\t\tRECIEPT")
+print(f"\tName of the item : {item}")
+print(f"\tQuantity of the item : {quantity}")
+print(f"\tStatus of the item : {status}")
+print(f"\tValue of the item : {value}")
+print(f"\tDiscount on the item : {discount}")
+print(f"\tTax on the item : {tax}")
+print(f"\tTotal amount : {total_amount}")
